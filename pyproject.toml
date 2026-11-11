@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "youtube-trend-radar"
+version = "1.0.0"
+description = "A daily YouTube trend radar: yt-dlp search plus batched YouTube Data API v3 lookups, a SQLite history, and title-format and niche-saturation signals."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["yt-dlp"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+radar = "radar.cli:main"
+
+[tool.setuptools]
+packages = ["radar"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E731"]

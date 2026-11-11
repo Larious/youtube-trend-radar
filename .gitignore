@@ -1,0 +1,21 @@
+# secrets
+.env
+
+# local runs: history, cache, daily outputs
+data/
+*.sqlite
+*.sqlite-journal
+*.log
+!sample/radar_sample.sqlite
+
+# python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+.DS_Store

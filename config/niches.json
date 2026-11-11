@@ -1,0 +1,1021 @@
+{
+ "_doc": "Seed bank for the daily scan. One entry per niche; each language lists broad seed queries. 'formats' is a cross-niche group of title grammar ('what if', 'the untold story'): a video found only by it is assigned to whichever subject niche also returned it, or to 'formats'. langs holds the breakout bar per language: a breakout needs at least min_views and min_vpd (views/day), and views at least equal to the channel's subscribers (floor 1,000). The scan rereads this file every run.",
+ "langs": {
+  "en": {
+   "min_vpd": 3000,
+   "min_views": 20000
+  },
+  "es": {
+   "min_vpd": 1500,
+   "min_views": 10000
+  },
+  "pt": {
+   "min_vpd": 1000,
+   "min_views": 8000
+  },
+  "fr": {
+   "min_vpd": 800,
+   "min_views": 6000
+  },
+  "hi": {
+   "min_vpd": 2000,
+   "min_views": 15000
+  },
+  "de": {
+   "min_vpd": 800,
+   "min_views": 6000
+  }
+ },
+ "niches": {
+  "documentary-general": {
+   "en": [
+    "documentary",
+    "full documentary",
+    "history documentary",
+    "the history of",
+    "explained",
+    "story",
+    "true story"
+   ],
+   "es": [
+    "documental",
+    "documental completo",
+    "la historia de"
+   ],
+   "pt": [
+    "documentário",
+    "a história de"
+   ],
+   "fr": [
+    "documentaire",
+    "l'histoire de"
+   ],
+   "hi": [
+    "डॉक्यूमेंट्री",
+    "का इतिहास"
+   ],
+   "de": [
+    "Dokumentation",
+    "die Geschichte"
+   ]
+  },
+  "money-economy": {
+   "en": [
+    "money",
+    "economy",
+    "housing market",
+    "real estate",
+    "inflation",
+    "taxes",
+    "stock market",
+    "crypto",
+    "business",
+    "company",
+    "brand",
+    "ceo",
+    "startup"
+   ],
+   "es": [
+    "economía",
+    "dinero",
+    "negocio"
+   ],
+   "pt": [
+    "economia",
+    "dinheiro"
+   ],
+   "fr": [
+    "économie",
+    "argent"
+   ],
+   "hi": [
+    "पैसा",
+    "बिजनेस"
+   ],
+   "de": [
+    "Wirtschaft",
+    "Geld"
+   ]
+  },
+  "wealth-luxury": {
+   "en": [
+    "billionaire",
+    "old money",
+    "luxury",
+    "inheritance",
+    "rich vs poor"
+   ],
+   "es": [
+    "millonario"
+   ],
+   "pt": [
+    "bilionário"
+   ],
+   "fr": [
+    "milliardaire"
+   ],
+   "hi": [
+    "अरबपति"
+   ]
+  },
+  "seniors-retirement": {
+   "en": [
+    "retirement",
+    "social security",
+    "seniors",
+    "elderly parents",
+    "aging",
+    "over 60"
+   ],
+   "es": [
+    "jubilación",
+    "personas mayores"
+   ],
+   "de": [
+    "Rente"
+   ]
+  },
+  "health-body": {
+   "en": [
+    "health",
+    "doctor",
+    "nurse",
+    "hospital",
+    "surgery",
+    "disease",
+    "medicine history",
+    "brain",
+    "sleep",
+    "body",
+    "what happens to your body"
+   ],
+   "es": [
+    "salud",
+    "tu cuerpo"
+   ],
+   "pt": [
+    "saúde",
+    "seu corpo"
+   ],
+   "fr": [
+    "santé",
+    "votre corps"
+   ],
+   "hi": [
+    "शरीर",
+    "स्वास्थ्य"
+   ],
+   "de": [
+    "Gesundheit",
+    "Körper"
+   ]
+  },
+  "food-drink": {
+   "en": [
+    "food",
+    "cooking",
+    "recipe",
+    "restaurant",
+    "fast food",
+    "grocery store",
+    "candy",
+    "coffee",
+    "whiskey",
+    "beer"
+   ],
+   "es": [
+    "comida",
+    "receta"
+   ],
+   "pt": [
+    "comida",
+    "receita"
+   ],
+   "fr": [
+    "cuisine"
+   ],
+   "hi": [
+    "खाना"
+   ]
+  },
+  "vehicles-transport": {
+   "en": [
+    "cars",
+    "trucks",
+    "truck driver",
+    "motorcycles",
+    "trains",
+    "railroad",
+    "airplanes",
+    "pilot",
+    "airport",
+    "ships",
+    "cruise ship",
+    "submarine"
+   ],
+   "es": [
+    "camiones",
+    "trenes",
+    "aviones"
+   ],
+   "pt": [
+    "caminhão",
+    "aviões"
+   ],
+   "de": [
+    "Züge",
+    "LKW"
+   ]
+  },
+  "military-war": {
+   "en": [
+    "navy",
+    "army",
+    "air force",
+    "marines",
+    "special forces",
+    "soldiers",
+    "war",
+    "ww2",
+    "ww1",
+    "cold war",
+    "vietnam war",
+    "civil war",
+    "american revolution"
+   ],
+   "es": [
+    "segunda guerra mundial",
+    "guerra"
+   ],
+   "pt": [
+    "segunda guerra mundial"
+   ],
+   "fr": [
+    "seconde guerre mondiale"
+   ],
+   "hi": [
+    "युद्ध",
+    "सेना"
+   ],
+   "de": [
+    "Zweiter Weltkrieg",
+    "Wehrmacht"
+   ]
+  },
+  "ancient-medieval": {
+   "en": [
+    "medieval",
+    "knights",
+    "castle",
+    "vikings",
+    "samurai",
+    "ancient rome",
+    "ancient egypt",
+    "ancient greece",
+    "aztec",
+    "maya",
+    "mongols",
+    "ottoman",
+    "byzantine",
+    "persia"
+   ],
+   "es": [
+    "imperio romano",
+    "edad media",
+    "aztecas"
+   ],
+   "pt": [
+    "império romano",
+    "idade média"
+   ],
+   "fr": [
+    "moyen âge",
+    "empire romain"
+   ],
+   "hi": [
+    "प्राचीन भारत",
+    "मुगल"
+   ],
+   "de": [
+    "Mittelalter",
+    "Römer"
+   ]
+  },
+  "country-history": {
+   "en": [
+    "china history",
+    "japan history",
+    "korea history",
+    "india history",
+    "africa history",
+    "russia history",
+    "soviet union",
+    "north korea",
+    "iran",
+    "mexico",
+    "brazil",
+    "canada",
+    "australia"
+   ],
+   "es": [
+    "historia de méxico",
+    "historia de españa"
+   ],
+   "pt": [
+    "história do brasil"
+   ],
+   "fr": [
+    "histoire de france"
+   ],
+   "hi": [
+    "भारत का इतिहास"
+   ],
+   "de": [
+    "DDR"
+   ]
+  },
+  "places-geography": {
+   "en": [
+    "alaska",
+    "texas",
+    "florida",
+    "california",
+    "new york",
+    "london",
+    "paris",
+    "ireland",
+    "scotland",
+    "germany",
+    "italy",
+    "spain",
+    "small town",
+    "village",
+    "island",
+    "ghost town",
+    "abandoned",
+    "city",
+    "countries",
+    "maps",
+    "borders"
+   ],
+   "es": [
+    "pueblo abandonado",
+    "países"
+   ],
+   "pt": [
+    "cidade abandonada"
+   ],
+   "fr": [
+    "village abandonné"
+   ],
+   "hi": [
+    "गांव",
+    "देश"
+   ],
+   "de": [
+    "verlassene"
+   ]
+  },
+  "space-science": {
+   "en": [
+    "space",
+    "nasa",
+    "moon",
+    "mars",
+    "universe",
+    "black hole",
+    "planets",
+    "stars",
+    "science",
+    "physics",
+    "chemistry",
+    "biology",
+    "math",
+    "experiment",
+    "invention",
+    "inventor",
+    "scientist"
+   ],
+   "es": [
+    "universo",
+    "espacio"
+   ],
+   "pt": [
+    "universo",
+    "espaço"
+   ],
+   "fr": [
+    "univers",
+    "espace"
+   ],
+   "hi": [
+    "अंतरिक्ष",
+    "ब्रह्मांड"
+   ],
+   "de": [
+    "Universum",
+    "Weltall"
+   ]
+  },
+  "nature-animals": {
+   "en": [
+    "ocean",
+    "deep sea",
+    "sharks",
+    "whales",
+    "animals",
+    "dogs",
+    "cats",
+    "horses",
+    "birds",
+    "snakes",
+    "spiders",
+    "insects",
+    "fungi",
+    "plants",
+    "trees",
+    "dinosaurs",
+    "prehistoric",
+    "ice age",
+    "evolution"
+   ],
+   "es": [
+    "animales",
+    "dinosaurios",
+    "océano"
+   ],
+   "pt": [
+    "animais",
+    "dinossauros"
+   ],
+   "fr": [
+    "animaux"
+   ],
+   "hi": [
+    "जानवर"
+   ],
+   "de": [
+    "Tiere"
+   ]
+  },
+  "disasters-weather": {
+   "en": [
+    "volcano",
+    "earthquake",
+    "tsunami",
+    "hurricane",
+    "tornado",
+    "storm",
+    "weather",
+    "flood",
+    "plane crash",
+    "shipwreck",
+    "disaster",
+    "accident"
+   ],
+   "es": [
+    "desastre",
+    "tragedia",
+    "accidente"
+   ],
+   "pt": [
+    "tragédia",
+    "desastre"
+   ],
+   "fr": [
+    "catastrophe"
+   ],
+   "hi": [
+    "हादसा"
+   ],
+   "de": [
+    "Katastrophe",
+    "Unglück"
+   ]
+  },
+  "wild-places-survival": {
+   "en": [
+    "desert",
+    "jungle",
+    "arctic",
+    "antarctica",
+    "cave",
+    "mountain",
+    "everest",
+    "river",
+    "lake",
+    "survival",
+    "prepper",
+    "bushcraft",
+    "lost in the wilderness",
+    "off grid"
+   ],
+   "es": [
+    "supervivencia"
+   ],
+   "pt": [
+    "sobrevivência"
+   ],
+   "fr": [
+    "survie"
+   ],
+   "de": [
+    "Überleben"
+   ]
+  },
+  "rural-outdoors": {
+   "en": [
+    "farm",
+    "farming",
+    "farmer",
+    "ranch",
+    "cowboy",
+    "wild west",
+    "homestead",
+    "hunting",
+    "fishing",
+    "camping",
+    "hiking"
+   ],
+   "es": [
+    "vida en el campo"
+   ],
+   "pt": [
+    "vida na roça"
+   ],
+   "hi": [
+    "खेती"
+   ]
+  },
+  "engineering-industry": {
+   "en": [
+    "engineering",
+    "construction",
+    "bridge",
+    "tunnel",
+    "dam",
+    "skyscraper",
+    "architecture",
+    "factory",
+    "how it's made",
+    "manufacturing",
+    "mining",
+    "oil",
+    "steel",
+    "nuclear",
+    "chernobyl",
+    "bunker"
+   ],
+   "es": [
+    "cómo se hace",
+    "ingeniería"
+   ],
+   "pt": [
+    "como é feito",
+    "engenharia"
+   ],
+   "fr": [
+    "comment c'est fait"
+   ],
+   "hi": [
+    "कैसे बनता है"
+   ],
+   "de": [
+    "wie es gemacht wird"
+   ]
+  },
+  "crime-justice": {
+   "en": [
+    "prison",
+    "jail",
+    "police",
+    "detective",
+    "crime",
+    "true crime",
+    "cold case",
+    "murder",
+    "serial killer",
+    "mafia",
+    "cartel",
+    "gang",
+    "heist",
+    "scam",
+    "fraud",
+    "con artist"
+   ],
+   "es": [
+    "crimen",
+    "caso real",
+    "narco"
+   ],
+   "pt": [
+    "caso real",
+    "crime"
+   ],
+   "fr": [
+    "affaire criminelle",
+    "faits divers"
+   ],
+   "hi": [
+    "क्राइम",
+    "सच्ची घटना"
+   ],
+   "de": [
+    "Kriminalfall",
+    "True Crime"
+   ]
+  },
+  "spies-secrets": {
+   "en": [
+    "spy",
+    "cia",
+    "kgb",
+    "secret",
+    "conspiracy"
+   ],
+   "es": [
+    "espía"
+   ],
+   "hi": [
+    "जासूस"
+   ]
+  },
+  "mystery-paranormal": {
+   "en": [
+    "mystery",
+    "unsolved",
+    "ghost",
+    "haunted",
+    "paranormal",
+    "aliens",
+    "ufo",
+    "bigfoot",
+    "cryptid"
+   ],
+   "es": [
+    "misterio",
+    "paranormal"
+   ],
+   "pt": [
+    "mistério"
+   ],
+   "fr": [
+    "mystère"
+   ],
+   "hi": [
+    "रहस्य"
+   ],
+   "de": [
+    "Mysterium"
+   ]
+  },
+  "religion-myth": {
+   "en": [
+    "mythology",
+    "gods",
+    "religion",
+    "bible",
+    "jesus",
+    "church",
+    "pope",
+    "islam",
+    "monks",
+    "cult"
+   ],
+   "es": [
+    "biblia",
+    "mitología"
+   ],
+   "pt": [
+    "bíblia",
+    "mitologia"
+   ],
+   "fr": [
+    "bible",
+    "mythologie"
+   ],
+   "hi": [
+    "महाभारत",
+    "रामायण"
+   ],
+   "de": [
+    "Bibel"
+   ]
+  },
+  "royals-leaders": {
+   "en": [
+    "royal family",
+    "king",
+    "queen",
+    "emperor",
+    "president",
+    "dictator"
+   ],
+   "es": [
+    "reyes",
+    "dictador"
+   ],
+   "pt": [
+    "rei",
+    "rainha"
+   ],
+   "fr": [
+    "roi",
+    "reine"
+   ],
+   "hi": [
+    "राजा"
+   ],
+   "de": [
+    "König"
+   ]
+  },
+  "celebrity-entertainment": {
+   "en": [
+    "celebrity",
+    "hollywood",
+    "actor",
+    "singer",
+    "musician",
+    "rock band",
+    "country music",
+    "hip hop",
+    "movies",
+    "tv shows",
+    "cartoon",
+    "anime",
+    "disney",
+    "star wars"
+   ],
+   "es": [
+    "famosos",
+    "telenovela"
+   ],
+   "pt": [
+    "famosos",
+    "novela"
+   ],
+   "fr": [
+    "célébrités"
+   ],
+   "hi": [
+    "बॉलीवुड"
+   ],
+   "de": [
+    "Promis"
+   ]
+  },
+  "games-tech": {
+   "en": [
+    "video games",
+    "nintendo",
+    "playstation",
+    "pokemon",
+    "minecraft history",
+    "internet",
+    "ai",
+    "robots",
+    "computer",
+    "phone",
+    "apple",
+    "google",
+    "tech",
+    "hacker"
+   ],
+   "es": [
+    "tecnología",
+    "inteligencia artificial"
+   ],
+   "pt": [
+    "tecnologia"
+   ],
+   "fr": [
+    "technologie"
+   ],
+   "hi": [
+    "टेक्नोलॉजी"
+   ],
+   "de": [
+    "Technik"
+   ]
+  },
+  "sports": {
+   "en": [
+    "sports",
+    "football",
+    "soccer",
+    "basketball",
+    "baseball",
+    "boxing",
+    "ufc",
+    "wrestling",
+    "formula 1",
+    "olympics",
+    "chess",
+    "tennis",
+    "golf"
+   ],
+   "es": [
+    "fútbol historia"
+   ],
+   "pt": [
+    "futebol história"
+   ],
+   "fr": [
+    "football histoire"
+   ],
+   "hi": [
+    "क्रिकेट"
+   ],
+   "de": [
+    "Fußball Geschichte"
+   ]
+  },
+  "family-relationships": {
+   "en": [
+    "school",
+    "teacher",
+    "university",
+    "parenting",
+    "family",
+    "marriage",
+    "divorce",
+    "wedding",
+    "mother",
+    "father",
+    "grandma",
+    "grandpa",
+    "twins",
+    "neighbors"
+   ],
+   "es": [
+    "familia",
+    "historia de amor"
+   ],
+   "pt": [
+    "família",
+    "história de amor"
+   ],
+   "fr": [
+    "famille"
+   ],
+   "hi": [
+    "परिवार",
+    "कहानी"
+   ],
+   "de": [
+    "Familie"
+   ]
+  },
+  "mind-self": {
+   "en": [
+    "psychology",
+    "narcissist",
+    "philosophy",
+    "stoicism",
+    "self improvement",
+    "motivation",
+    "language",
+    "english words"
+   ],
+   "es": [
+    "psicología",
+    "estoicismo"
+   ],
+   "pt": [
+    "psicologia",
+    "estoicismo"
+   ],
+   "fr": [
+    "psychologie"
+   ],
+   "hi": [
+    "मनोविज्ञान"
+   ],
+   "de": [
+    "Psychologie"
+   ]
+  },
+  "ai-film-drama": {
+   "en": [
+    "full movie african",
+    "billionaire full movie",
+    "ai movie",
+    "ai short film",
+    "nollywood movie"
+   ],
+   "es": [
+    "película completa ia"
+   ],
+   "fr": [
+    "film africain complet"
+   ],
+   "pt": [
+    "filme completo ia"
+   ]
+  },
+  "3d-explainers": {
+   "en": [
+    "3d animation explained",
+    "how it works 3d animation",
+    "3d size comparison",
+    "3d reconstruction",
+    "3d timelapse",
+    "3d cutaway",
+    "3d recreation",
+    "3d animated documentary",
+    "what happens inside 3d",
+    "how ancient was built 3d animation",
+    "3d anatomy animation",
+    "3d crash reconstruction",
+    "3d disaster simulation",
+    "3d battle reconstruction"
+   ],
+   "es": [
+    "animación 3d",
+    "recreación 3d"
+   ],
+   "pt": [
+    "animação 3d"
+   ]
+  },
+  "formats": {
+   "_format": true,
+   "en": [
+    "what if",
+    "what happens if",
+    "what happens when",
+    "what happened to",
+    "why did",
+    "why do",
+    "why is",
+    "how did",
+    "how does",
+    "how do they",
+    "how much did it cost",
+    "what it was like",
+    "what life was like",
+    "daily life in",
+    "a day in the life",
+    "your life as",
+    "pov you are",
+    "you wake up",
+    "if you lived in",
+    "living in",
+    "inside the",
+    "behind the scenes",
+    "the truth about",
+    "the real story",
+    "the untold story",
+    "the dark history",
+    "the dark side of",
+    "the secret life of",
+    "the rise and fall",
+    "the tragic story",
+    "the strange story",
+    "the forgotten",
+    "the last",
+    "every level of",
+    "every type of",
+    "ranking every",
+    "things you didn't know",
+    "facts about",
+    "stories",
+    "for sleep",
+    "sleepy history",
+    "boring history",
+    "explained in",
+    "in 1 hour",
+    "complete history"
+   ],
+   "es": [
+    "qué pasaría si",
+    "la verdadera historia",
+    "la triste historia",
+    "así era",
+    "cómo era la vida",
+    "historia para dormir"
+   ],
+   "pt": [
+    "e se",
+    "a verdadeira história",
+    "como era a vida",
+    "história para dormir"
+   ],
+   "fr": [
+    "et si",
+    "la vraie histoire",
+    "histoire pour dormir"
+   ],
+   "hi": [
+    "क्या होगा अगर",
+    "की असली कहानी",
+    "सच्ची कहानी"
+   ],
+   "de": [
+    "was wäre wenn",
+    "die wahre Geschichte"
+   ]
+  }
+ }
+}
